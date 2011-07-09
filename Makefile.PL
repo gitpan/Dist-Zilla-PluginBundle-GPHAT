@@ -11,7 +11,9 @@ use ExtUtils::MakeMaker 6.30;
 my %WriteMakefileArgs = (
   'ABSTRACT' => 'Dist::Zilla plugins for gphat',
   'AUTHOR' => 'Cory G Watson <gphat@cpan.org>',
-  'BUILD_REQUIRES' => {},
+  'BUILD_REQUIRES' => {
+    'Test::More' => '0'
+  },
   'CONFIGURE_REQUIRES' => {
     'ExtUtils::MakeMaker' => '6.30'
   },
@@ -27,9 +29,11 @@ my %WriteMakefileArgs = (
     'Dist::Zilla::Plugin::GithubMeta' => '0',
     'Dist::Zilla::Plugin::PodWeaver' => '0',
     'Dist::Zilla::Plugin::ReadmeMarkdownFromPod' => '0',
-    'Dist::Zilla::Plugin::SynopsisTests' => '0'
+    'Dist::Zilla::Plugin::SynopsisTests' => '0',
+    'Dist::Zilla::Role::PluginBundle::Easy' => '0',
+    'Moose' => '0'
   },
-  'VERSION' => '0.01',
+  'VERSION' => '0.02',
   'test' => {
     'TESTS' => 't/*.t'
   }

@@ -1,8 +1,11 @@
 LICENSE
 MANIFEST
+META.json
 META.yml
 Makefile.PL
 README
-dist.ini
+README.mkdn
 lib/Dist/Zilla/PluginBundle/GPHAT.pm
 t/compile.t
+t/release-pod-syntax.t
+t/release-synopsis.t

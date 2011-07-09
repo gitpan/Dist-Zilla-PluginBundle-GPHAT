@@ -2,7 +2,8 @@
 abstract: 'Dist::Zilla plugins for gphat'
 author:
   - 'Cory G Watson <gphat@cpan.org>'
-build_requires: {}
+build_requires:
+  Test::More: 0
 configure_requires:
   ExtUtils::MakeMaker: 6.30
 dynamic_config: 0
@@ -21,4 +22,9 @@ requires:
   Dist::Zilla::Plugin::PodWeaver: 0
   Dist::Zilla::Plugin::ReadmeMarkdownFromPod: 0
   Dist::Zilla::Plugin::SynopsisTests: 0
-version: 0.01
+  Dist::Zilla::Role::PluginBundle::Easy: 0
+  Moose: 0
+resources:
+  homepage: http://github.com/gphat/dist-zilla-pluginbundle-gphat
+  repository: http://github.com/gphat/dist-zilla-pluginbundle-gphat
+version: 0.02
