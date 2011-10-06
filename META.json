@@ -4,7 +4,7 @@
       "Cory G Watson <gphat@cpan.org>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Dist::Zilla version 4.200007, CPAN::Meta::Converter version 2.110440",
+   "generated_by" : "Dist::Zilla version 4.300001, CPAN::Meta::Converter version 2.112150",
    "license" : [
       "perl_5"
    ],
@@ -35,19 +35,21 @@
       },
       "test" : {
          "requires" : {
-            "Test::More" : 0
+            "Test::More" : 0,
+            "strict" : 0,
+            "warnings" : 0
          }
       }
    },
    "release_status" : "stable",
    "resources" : {
-      "homepage" : "http://github.com/gphat/dist-zilla-pluginbundle-gphat",
+      "homepage" : "https://github.com/gphat/dist-zilla-pluginbundle-gphat",
       "repository" : {
          "type" : "git",
-         "url" : "http://github.com/gphat/dist-zilla-pluginbundle-gphat",
-         "web" : "http://github.com/gphat/dist-zilla-pluginbundle-gphat"
+         "url" : "https://github.com/gphat/dist-zilla-pluginbundle-gphat.git",
+         "web" : "https://github.com/gphat/dist-zilla-pluginbundle-gphat"
       }
    },
-   "version" : "0.02"
+   "version" : "0.03"
 }
 

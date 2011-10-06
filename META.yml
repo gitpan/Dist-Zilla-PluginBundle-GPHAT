@@ -4,10 +4,12 @@ author:
   - 'Cory G Watson <gphat@cpan.org>'
 build_requires:
   Test::More: 0
+  strict: 0
+  warnings: 0
 configure_requires:
   ExtUtils::MakeMaker: 6.30
 dynamic_config: 0
-generated_by: 'Dist::Zilla version 4.200007, CPAN::Meta::Converter version 2.110440'
+generated_by: 'Dist::Zilla version 4.300001, CPAN::Meta::Converter version 2.112150'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -25,6 +27,6 @@ requires:
   Dist::Zilla::Role::PluginBundle::Easy: 0
   Moose: 0
 resources:
-  homepage: http://github.com/gphat/dist-zilla-pluginbundle-gphat
-  repository: http://github.com/gphat/dist-zilla-pluginbundle-gphat
-version: 0.02
+  homepage: https://github.com/gphat/dist-zilla-pluginbundle-gphat
+  repository: https://github.com/gphat/dist-zilla-pluginbundle-gphat.git
+version: 0.03

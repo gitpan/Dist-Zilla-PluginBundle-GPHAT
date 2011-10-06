@@ -1,6 +1,6 @@
 package Dist::Zilla::PluginBundle::GPHAT;
-BEGIN {
-  $Dist::Zilla::PluginBundle::GPHAT::VERSION = '0.02';
+{
+  $Dist::Zilla::PluginBundle::GPHAT::VERSION = '0.03';
 }
 use Moose;
 
@@ -42,7 +42,7 @@ sub configure {
 
     $self->add_plugins([
         'CopyFilesFromBuild' => {
-            format => 'README.mkdn'
+            copy => 'README.mkdn'
         }
     ]);
     
@@ -77,7 +77,7 @@ Dist::Zilla::PluginBundle::GPHAT - Dist::Zilla plugins for gphat
 
 =head1 VERSION
 
-version 0.02
+version 0.03
 
 =head1 DESCRIPTION
 
