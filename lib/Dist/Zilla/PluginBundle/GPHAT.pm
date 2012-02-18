@@ -1,6 +1,6 @@
 package Dist::Zilla::PluginBundle::GPHAT;
 {
-  $Dist::Zilla::PluginBundle::GPHAT::VERSION = '0.03';
+  $Dist::Zilla::PluginBundle::GPHAT::VERSION = '0.04';
 }
 use Moose;
 
@@ -37,8 +37,13 @@ sub configure {
         SynopsisTests
         PodSyntaxTests
         MetaJSON
-        GithubMeta
     ));
+
+    $self->add_plugins([
+        'GithubMeta' => {
+            issues => 1
+        }
+    ]);
 
     $self->add_plugins([
         'CopyFilesFromBuild' => {
@@ -77,7 +82,7 @@ Dist::Zilla::PluginBundle::GPHAT - Dist::Zilla plugins for gphat
 
 =head1 VERSION
 
-version 0.03
+version 0.04
 
 =head1 DESCRIPTION
 
@@ -105,6 +110,7 @@ This is the plugin bundle that GPHAT uses.  It's equivalent to:
     [MetaJSON]
 
     [GithubMeta]
+    issues = 1
 
     [CopyFilesFromBuild]
     copy            = README.mkdn
@@ -125,7 +131,7 @@ Cory G Watson <gphat@cpan.org>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2011 by Cory G Watson.
+This software is copyright (c) 2012 by Cory G Watson.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
