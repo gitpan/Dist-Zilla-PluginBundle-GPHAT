@@ -1,7 +1,5 @@
 package Dist::Zilla::PluginBundle::GPHAT;
-{
-  $Dist::Zilla::PluginBundle::GPHAT::VERSION = '0.04';
-}
+$Dist::Zilla::PluginBundle::GPHAT::VERSION = '0.05';
 use Moose;
 
 with 'Dist::Zilla::Role::PluginBundle::Easy';
@@ -74,7 +72,10 @@ no Moose;
 1;
 
 __END__
+
 =pod
+
+=encoding UTF-8
 
 =head1 NAME
 
@@ -82,7 +83,7 @@ Dist::Zilla::PluginBundle::GPHAT - Dist::Zilla plugins for gphat
 
 =head1 VERSION
 
-version 0.04
+version 0.05
 
 =head1 DESCRIPTION
 
@@ -103,7 +104,7 @@ This is the plugin bundle that GPHAT uses.  It's equivalent to:
     [NextRelease]
     format          = %v %{MMM d yyyy}d
 
-    [SynopsisTests]
+    [Test::Synopsis]
 
     [PodSyntaxTests]
 
@@ -131,10 +132,9 @@ Cory G Watson <gphat@cpan.org>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2012 by Cory G Watson.
+This software is copyright (c) 2014 by Cory G Watson.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
 
 =cut
-
