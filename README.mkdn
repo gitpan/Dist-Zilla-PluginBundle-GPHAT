@@ -4,7 +4,7 @@ Dist::Zilla::PluginBundle::GPHAT - Dist::Zilla plugins for gphat
 
 # VERSION
 
-version 0.05
+version 0.06
 
 # DESCRIPTION
 

@@ -1,5 +1,5 @@
 package Dist::Zilla::PluginBundle::GPHAT;
-$Dist::Zilla::PluginBundle::GPHAT::VERSION = '0.05';
+$Dist::Zilla::PluginBundle::GPHAT::VERSION = '0.06';
 use Moose;
 
 with 'Dist::Zilla::Role::PluginBundle::Easy';
@@ -83,7 +83,7 @@ Dist::Zilla::PluginBundle::GPHAT - Dist::Zilla plugins for gphat
 
 =head1 VERSION
 
-version 0.05
+version 0.06
 
 =head1 DESCRIPTION
 

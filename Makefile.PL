@@ -28,7 +28,7 @@ my %WriteMakefileArgs = (
     "Dist::Zilla::Plugin::GithubMeta" => 0,
     "Dist::Zilla::Plugin::PodWeaver" => 0,
     "Dist::Zilla::Plugin::ReadmeMarkdownFromPod" => 0,
-    "Dist::Zilla::Plugin::SynopsisTests" => 0,
+    "Dist::Zilla::Plugin::Test::Synopsis" => 0,
     "Dist::Zilla::Role::PluginBundle::Easy" => 0,
     "Moose" => 0
   },
@@ -37,7 +37,7 @@ my %WriteMakefileArgs = (
     "strict" => 0,
     "warnings" => 0
   },
-  "VERSION" => "0.05",
+  "VERSION" => "0.06",
   "test" => {
     "TESTS" => "t/*.t"
   }
@@ -52,7 +52,7 @@ my %FallbackPrereqs = (
   "Dist::Zilla::Plugin::GithubMeta" => 0,
   "Dist::Zilla::Plugin::PodWeaver" => 0,
   "Dist::Zilla::Plugin::ReadmeMarkdownFromPod" => 0,
-  "Dist::Zilla::Plugin::SynopsisTests" => 0,
+  "Dist::Zilla::Plugin::Test::Synopsis" => 0,
   "Dist::Zilla::Role::PluginBundle::Easy" => 0,
   "Moose" => 0,
   "Test::More" => 0,
